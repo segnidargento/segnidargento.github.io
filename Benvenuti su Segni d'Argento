@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Segni d'Argento</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; padding: 50px; background: #f9f9f9; }
+    h1 { color: #444; }
+    p { font-size: 18px; line-height: 1.6; max-width: 600px; margin: 20px auto; }
+    a { display: inline-block; margin-top: 20px; font-size: 20px; 
+        padding: 12px 24px; background: #ff9900; color: white; 
+        text-decoration: none; border-radius: 8px; }
+    a:hover { background: #cc7a00; }
+  </style>
+</head>
+<body>
+  <h1>Benvenuti su Segni d'Argento!</h1>
+  <p>
+    Avvisiamo i gentili clienti che a breve gestiremo tutte le attività del nostro negozio online
+    esclusivamente su <strong>Amazon</strong>.
+  </p>
+  <p>
+    Il nostro <em>Segni d'Argento Amazon Store</em> è già pienamente funzionante e raggiungibile al link qui sotto.
+  </p>
+  <p>
+    Nel frattempo, tutti gli ordini già effettuati su Shopify verranno evasi regolarmente.
+  </p>
+  <a href="https://www.amazon.it/tuo-negozio" target="_blank">Visita il nostro Amazon Store</a>
+</body>
+</html>
