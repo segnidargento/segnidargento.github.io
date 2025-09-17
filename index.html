@@ -20,14 +20,21 @@
       margin: 20px auto; 
     }
     .btn {
-      display: block; /* Forza ogni pulsante su una nuova riga */
+      display: flex; /* Icona + testo allineati */
+      align-items: center;
+      justify-content: center;
+      gap: 10px; /* Spazio tra icona e testo */
       font-size: 20px;
       padding: 12px 24px;
       color: white;
       text-decoration: none;
       border-radius: 8px;
-      margin: 10px auto; /* Centra e aggiunge spazio verticale */
-      width: fit-content; /* Larghezza basata sul contenuto */
+      margin: 10px auto;
+      width: fit-content;
+    }
+    .btn img {
+      height: 24px;
+      width: 24px;
     }
     .amazon { background: #ff9900; }
     .amazon:hover { background: #cc7a00; }
@@ -48,10 +55,18 @@
   
   <div>
     <a href="https://www.amazon.it/stores/SegnidArgento/page/DDC7B4C4-9E21-41BE-9B7B-96348A00C211" 
-       target="_blank" class="btn amazon">Segni d'Argento® su Amazon.it</a>
+       target="_blank" class="btn amazon">
+       <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo">
+       Segni d'Argento® su Amazon.it
+    </a>
+
     <a href="https://www.instagram.com/segnidargento/" 
-       target="_blank" class="btn instagram">Seguici su Instagram</a>
+       target="_blank" class="btn instagram">
+       <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo">
+       Seguici su Instagram
+    </a>
   </div>
+
   <img src="gioielli800p.jpg" 
        alt="Gioielli in argento Segni d'Argento" 
        style="max-width: 600px; margin-top: 30px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
