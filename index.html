@@ -20,13 +20,12 @@
       margin: 20px auto; 
     }
     .btn {
-      display: flex; /* Icona + testo allineati */
+      display: flex; 
       align-items: center;
       justify-content: center;
-      gap: 10px; /* Spazio tra icona e testo */
+      gap: 10px; 
       font-size: 20px;
       padding: 12px 24px;
-      color: white;
       text-decoration: none;
       border-radius: 8px;
       margin: 10px auto;
@@ -36,10 +35,23 @@
       height: 24px;
       width: 24px;
     }
-    .amazon { background: #ff9900; }
-    .amazon:hover { background: #cc7a00; }
-    .instagram { background: #e1306c; }
-    .instagram:hover { background: #b02452; }
+    /* Pulsante Amazon */
+    .amazon { 
+      background: #ffffff; 
+      color: #000000; 
+      border: 1px solid #ccc; 
+    }
+    .amazon:hover { 
+      background: #f2f2f2; 
+    }
+    /* Pulsante Instagram */
+    .instagram { 
+      background: #e1306c; 
+      color: #ffffff; 
+    }
+    .instagram:hover { 
+      background: #b02452; 
+    }
   </style>
 </head>
 <body>
@@ -55,14 +67,16 @@
   
   <div>
     <a href="https://www.amazon.it/stores/SegnidArgento/page/DDC7B4C4-9E21-41BE-9B7B-96348A00C211" 
-    target="_blank" class="btn amazon">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg" alt="Amazon Icon" style="width:24px; height:24px;">
-    Segni d'Argento® su Amazon.it
+       target="_blank" class="btn amazon">
+       <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg" 
+            alt="Amazon Icon">
+       Segni d'Argento® su Amazon.it
     </a>
 
     <a href="https://www.instagram.com/segnidargento/" 
        target="_blank" class="btn instagram">
-       <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo">
+       <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" 
+            alt="Instagram Logo">
        Seguici su Instagram
     </a>
   </div>
