@@ -61,6 +61,35 @@
       color: #777;
       margin-top: 40px;
     }
+    /* --- Mobile Optimization --- */
+@media (max-width: 600px) {
+
+  h1 {
+    font-size: 26px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  footer {
+    font-size: 11pt;
+  }
+
+  /* Bigger buttons on mobile */
+  .btn {
+    font-size: 22px;      /* Larger text */
+    padding: 16px 28px;   /* Bigger tap area */
+    gap: 14px;            /* More spacing between icon & text */
+  }
+
+  /* Larger icons inside buttons */
+  .btn img {
+    width: 32px;
+    height: 32px;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -95,31 +124,3 @@
   </footer>
 </body>
 </html>
-/* --- Mobile Optimization --- */
-@media (max-width: 600px) {
-
-  h1 {
-    font-size: 26px;
-  }
-
-  p {
-    font-size: 16px;
-  }
-
-  footer {
-    font-size: 11pt;
-  }
-
-  /* Bigger buttons on mobile */
-  .btn {
-    font-size: 22px;      /* Larger text */
-    padding: 16px 28px;   /* Bigger tap area */
-    gap: 14px;            /* More spacing between icon & text */
-  }
-
-  /* Larger icons inside buttons */
-  .btn img {
-    width: 32px;
-    height: 32px;
-  }
-}
