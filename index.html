@@ -61,29 +61,28 @@
       color: #777;
       margin-top: 40px;
     }
-    /* --- Mobile Optimization --- */
-@media (max-width: 800px) {
+  /* Mobile optimization */
+@media (max-width: 600px) {
 
+  /* Titolo più piccolo per smartphone */
   h1 {
-    font-size: 16px;
+    font-size: 24px; /* prima era 32px */
   }
 
+  /* Testo leggermente più piccolo e compatto */
   p {
-    font-size: 12px;
+    font-size: 16px; /* prima era 18px */
+    line-height: 1.5;
   }
 
-  footer {
-    font-size: 8pt;
-  }
-
-  /* Bigger buttons on mobile */
+  /* Pulsanti più grandi */
   .btn {
-    font-size: 22px;      /* Larger text */
-    padding: 16px 28px;   /* Bigger tap area */
-    gap: 14px;            /* More spacing between icon & text */
+    font-size: 22px;      /* testo più grande */
+    padding: 16px 28px;   /* area clic più grande */
+    gap: 12px;            /* spazio tra icona e testo */
   }
 
-  /* Larger icons inside buttons */
+  /* Icone all’interno dei pulsanti più grandi */
   .btn img {
     width: 32px;
     height: 32px;
