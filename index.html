@@ -63,15 +63,14 @@
     }
   /* Mobile optimization */
 @media (max-width: 600px) {
-
-  /* Titolo più piccolo per smartphone */
+  /* Titolo più piccolo */
   h1 {
-    font-size: 24px; /* prima era 32px */
+    font-size: 24px;
   }
 
-  /* Testo leggermente più piccolo e compatto */
+  /* Testo leggermente più piccolo */
   p {
-    font-size: 16px; /* prima era 18px */
+    font-size: 16px;
     line-height: 1.5;
   }
 
@@ -80,12 +79,23 @@
     font-size: 22px;      /* testo più grande */
     padding: 16px 28px;   /* area clic più grande */
     gap: 12px;            /* spazio tra icona e testo */
+    width: 90%;           /* facciamo quasi full-width per eleganza */
+    max-width: 300px;     /* non troppo larghi */
+    display: block;       /* centriamo */
+    margin: 10px auto;    /* margine verticale uniforme */
   }
 
-  /* Icone all’interno dei pulsanti più grandi */
+  /* Icone all’interno dei pulsanti */
   .btn img {
     width: 32px;
     height: 32px;
+  }
+
+  /* Immagine gioielli adattabile */
+  img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
   }
 }
 
