@@ -28,7 +28,6 @@
       color: #333;
     }
 
-    /* Contenitore pulsanti */
     .buttons {
       display: flex;
       flex-direction: column;
@@ -54,34 +53,14 @@
       transition: all 0.3s ease;
     }
 
-    .btn img {
-      height: 32px;
-      width: 32px;
-    }
+    .btn img {height: 32px;width: 32px;}
 
-    /* Amazon */
-    .amazon { 
-      background: #ffffff; 
-      color: #000; 
-      border: 2px solid #ff9900;
-    }
-    .amazon:hover, .amazon:active { 
-      background: #fff8f0; 
-      transform: translateY(-2px);
-      box-shadow: 0 8px 20px rgba(255,153,0,0.2);
-    }
+    .amazon {background:#fff;color:#000;border:2px solid #ff9900;}
+    .amazon:hover,.amazon:active {background:#fff8f0;transform:translateY(-2px);box-shadow:0 8px 20px rgba(255,153,0,0.2);}
 
-    /* Instagram */
-    .instagram { 
-      background: linear-gradient(45deg, #e1306c, #fd1d1d); 
-      color: #fff; 
-    }
-    .instagram:hover, .instagram:active { 
-      background: linear-gradient(45deg, #c71d58, #e0115f);
-      transform: translateY(-2px);
-    }
+    .instagram {background:linear-gradient(45deg,#e1306c,#fd1d1d);color:#fff;}
+    .instagram:hover,.instagram:active {background:linear-gradient(45deg,#c71d58,#e0115f);transform:translateY(-2px);}
 
-    /* Immagine gioielli */
     .hero-img {
       max-width: 100%;
       height: auto;
@@ -91,6 +70,21 @@
       display: block;
     }
 
+    /* ←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←← */
+    /* Immagine Made in Italy piccola e centrata */
+    .small-img {
+      max-width: 140px;          /* misura perfetta su desktop */
+      height: auto;
+      margin: 40px auto 30px;
+      display: block;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+    }
+    @media (max-width: 480px) {
+      .small-img { max-width: 110px; }   /* ancora più piccola su telefono */
+    }
+    /* ←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←← */
+
     footer {
       font-size: 16px;
       color: #777;
@@ -99,60 +93,45 @@
       border-top: 1px solid #eee;
     }
 
-    /* OTTIMIZZAZIONE MOBILE */
     @media (max-width: 768px) {
-      h1 { font-size: 26px; }
-      p { font-size: 18px; }
-      
-      .btn {
-        font-size: 20px;
-        padding: 22px 32px;
-        gap: 16px;
-      }
-      .btn img {
-        height: 36px;
-        width: 36px;
-      }
+      h1 {font-size: 26px;}
+      p {font-size: 18px;}
+      .btn {padding: 22px 32px;gap: 16px;}
+      .btn img {height: 36px;width: 36px;}
     }
-
     @media (max-width: 480px) {
-      body { padding: 30px 15px; }
-      h1 { font-size: 24px; }
-      .btn {
-        padding: 24px 32px;
-        font-size: 21px;
-      }
+      body {padding: 30px 15px;}
+      h1 {font-size: 24px;}
+      .btn {padding: 24px 32px;font-size: 21px;}
     }
   </style>
 </head>
 <body>
   <h1>Benvenuti su Segni d'Argento®</h1>
   
- <p>
-      Scoprite i nostri gioielli unici in Argento 925 e pietre semipreziose creati artigianalmente in Italia e in vendita nello Store <strong>Segni d'Argento®</strong> su <strong>Amazon.it</strong>.</p>
- <p>  Offriamo la <strong>spedizione tracciata con corriere espresso sempre gratuita.</strong>
- </p>
+  <p>Scoprite i nostri gioielli unici in Argento 925 e pietre semipreziose creati artigianalmente in Italia e in vendita nello Store <strong>Segni d'Argento®</strong> su <strong>Amazon.it</strong>.</p>
+  <p>Offriamo la <strong>spedizione tracciata con corriere espresso sempre gratuita.</strong></p>
   
   <p>Il negozio ufficiale è esclusivamente su Amazon ed è visitabile cliccando sul pulsante riportato qui sotto, oppure tramite ricerca su Amazon.it.</p>
   <p>Diffidate di siti e-commerce e dropshipping estranei che dovessero utilizzare il nostro marchio, immagini di prodotto e descrizioni.</p>
-  <p> Seguiteci anche su Instagram per rimanere aggiornati sulle novità del negozio!</p>
+  <p>Seguiteci anche su Instagram per rimanere aggiornati sulle novità del negozio!</p>
 
   <div class="buttons">
-    <a href="https://www.amazon.it/stores/SegnidArgento/page/DDC7B4C4-9E21-41BE-9B7B-96348A00C211" 
-       target="_blank" class="btn amazon">
+    <a href="https://www.amazon.it/stores/SegnidArgento/page/DDC7B4C4-9E21-41BE-9B7B-96348A00C211" target="_blank" class="btn amazon">
        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg" alt="Amazon">
        Segni d'Argento® su Amazon.it
     </a>
 
-    <a href="https://www.instagram.com/segnidargento/" 
-       target="_blank" class="btn instagram">
+    <a href="https://www.instagram.com/segnidargento/" target="_blank" class="btn instagram">
        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
        Seguici su Instagram
     </a>
   </div>
 
   <img src="gioielli800p.jpg" alt="Gioielli artigianali Segni d'Argento" class="hero-img">
+  
   <img src="made in Italy.jpg" alt="100% Made in Italy" class="small-img">
+
   <footer>
     Segni d'Argento® è un marchio registrato. Tutti i diritti riservati.<br>
     P.IVA 17713061004
